@@ -1,0 +1,20 @@
+.ls-block {
+  margin-top: 2px; /*提高段落间距*/
+}
+
+.bullet-container {
+  opacity: 0; /*hide bullet by default*/
+}
+
+.block-children {
+  border-left: 0; /*hide bullet line by default*/
+}
+
+.ls-block:hover > div > div > a > .bullet-container {
+  opacity: 1; /*show bullet when hovering on block*/
+}
+
+.ls-block:hover > div > .block-children{
+  border-left: 1px solid;
+  border-left-color: var(--ls-guideline-color,#ddd);
+}
